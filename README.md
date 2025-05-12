@@ -20,7 +20,6 @@ This is an AI-driven system that detects fake reviews, performs sentiment analys
 
 > Easy CSV-based input/output for batch processing
 
-processing
 
 **Tech Stack:**
 
