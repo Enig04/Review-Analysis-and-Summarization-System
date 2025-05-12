@@ -37,6 +37,11 @@ This is an AI-driven system that detects fake reviews, performs sentiment analys
 
 > HTML/CSS/Js
 
-**NOTE:** This project uses DeepSeek7B (https://ollama.com/library/deepseek-llm) via Ollama (https://ollama.com/) for text summarization.
+**NOTE:** 
+
+1) This project uses DeepSeek7B (https://ollama.com/library/deepseek-llm) via Ollama (https://ollama.com/) for text summarization.
 
 Make sure you have Ollama installed and the DeepSeek model pulled.
+
+
+2) This project uses Oxylabs' Web Scraper API for scraping amazon reviews. Make sure you have the required details in order to use the API.
