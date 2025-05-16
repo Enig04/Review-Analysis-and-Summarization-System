@@ -4,6 +4,12 @@ AI-powered system for detecting fake reviews, analyzing sentiment, and generatin
 
 This is an AI-driven system that detects fake reviews, performs sentiment analysis, and generates concise summaries to support trustworthy decision-making. Built with a hybrid model of BERT, character embeddings, and token embeddings, the system is designed for use in e-commerce and service-oriented platforms where user feedback heavily influences consumer behavior.
 
+![App Screenshot](static/images/screenshot1.png)
+
+![App Screenshot](static/images/screenshot2.png)
+
+![App Screenshot](static/images/screenshot3.png)
+
 **Features:**
 
 > Detects fake reviews using deep learning and linguistic patterns
