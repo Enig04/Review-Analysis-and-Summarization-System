@@ -12,36 +12,26 @@ This is an AI-driven system that detects fake reviews, performs sentiment analys
 
 **Features:**
 
-> Detects fake reviews using deep learning and linguistic patterns
+- Detects fake reviews using deep learning and linguistic patterns
+- Hybrid NLP model using BERT + token/character embeddings
+- Sentiment analysis (polarity, subjectivity, etc.)
+- Review summarization with keyword/polarity filtering
+- Review screening with personalization options
+- Outputs real, trustworthy reviews with summaries
+- Easy CSV-based input/output for batch processing
 
-> Hybrid NLP model using BERT + token/character embeddings
-
-> Sentiment analysis (polarity, subjectivity, etc.)
-
-> Review summarization with keyword/polarity filtering
-
-> Review screening with personalization options
-
-> Outputs real, trustworthy reviews with summaries
-
-> Easy CSV-based input/output for batch processing
 
 
 **Tech Stack:**
 
-> Python
+- Python
+- TensorFlow / Keras
+- BERT (via Hugging Face Transformers)
+- NLTK / TextBlob
+- Flask (for deployment)
+- Pandas / NumPy
+- HTML/CSS/Js
 
-> TensorFlow / Keras
-
-> BERT (via Hugging Face Transformers)
-
-> NLTK / TextBlob
-
-> Flask (for deployment)
-
-> Pandas / NumPy
-
-> HTML/CSS/Js
 
 **NOTE:** 
 
