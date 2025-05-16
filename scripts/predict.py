@@ -35,8 +35,8 @@ def generate_pdf(real_reviews, output_pdf_path):
         logging.error(f"Error generating PDF: {str(e)}")
         return False
 
-def preprocess_for_prediction(text, rating, model_path="models/model/kaggle/working/model", 
-                              char_model_path="models/char_model/char_vectorizer_model"):
+def preprocess_for_prediction(text, rating, model_path="model", 
+                              char_model_path="char_vectorizer_model"):
     try:
 
         token_input = tf.convert_to_tensor([text])
@@ -113,8 +113,8 @@ def main():
 
         logging.info("Loading models and scalers...")
         try:
-            model = tf.keras.models.load_model("models/model/kaggle/working/model")
-            char_vectorizer_model = tf.keras.models.load_model("models/char_model/char_vectorizer_model")
+            model = tf.keras.models.load_model("model")
+            char_vectorizer_model = tf.keras.models.load_model("char_vectorizer_model")
         except Exception as e:
             logging.error(f"Error loading models: {str(e)}")
             return False
