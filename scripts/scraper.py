@@ -1,15 +1,10 @@
 import requests
 import pandas as pd
 import sys
-import os
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
-
-USERNAME = os.getenv("OXYLABS_USERNAME")
-PASSWORD = os.getenv("OXYLABS_PASSWORD")
-OXYLABS_API_URL = os.getenv("OXYLABS_API_URL", "https://realtime.oxylabs.io/v1/queries")
+USERNAME = "Enter your oxyalbs api username here"
+PASSWORD = "Enter the password here"
+OXYLABS_API_URL = "https://realtime.oxylabs.io/v1/queries"
 
 def scrape_reviews(asin):
     payload = {
