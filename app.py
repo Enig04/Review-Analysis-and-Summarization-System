@@ -4,10 +4,6 @@ from flask import Flask, render_template, request, jsonify
 import subprocess
 import json
 import re
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -93,7 +89,7 @@ def summarize():
         if not summary_text:
             return jsonify({"error": "Failed to generate summary"}), 500
         
-        sentiment_stats_path = os.getenv("SENTIMENT_STATS_PATH", "data/sentiment_stats.json")
+        sentiment_stats_path = "data/sentiment_stats.json"
         sentiment_stats = {
             "sentiment_counts": {"positive": 0, "neutral": 0, "negative": 0},
             "total_reviews": 0,
@@ -120,6 +116,4 @@ def summarize():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    host = os.getenv("FLASK_RUN_HOST", "127.0.0.1")
-    port = int(os.getenv("FLASK_RUN_PORT", 5000))
-    app.run(debug=True, host=host, port=port, use_reloader=False)
+    app.run(debug=True, host='add-your-host-ip-here', port='add-your-port-here', use_reloader=False)
