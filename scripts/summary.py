@@ -1,11 +1,6 @@
 import requests
 import fitz  # PyMuPDF
 import json
-import os
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
 
 def extract_text_from_pdf(pdf_path):
     doc = fitz.open(pdf_path)
@@ -15,8 +10,8 @@ def extract_text_from_pdf(pdf_path):
 def run_summary(pdf_file="data/real_reviews.pdf"):
     file_content = extract_text_from_pdf(pdf_file)
 
-    ollama_url = os.getenv("OLLAMA_API_URL", "http://127.0.0.1:11434/api/generate")
-    ollama_model = os.getenv("OLLAMA_MODEL", "deepseek-llm:7b")
+    ollama_url =  "http://ADD-YOUR-LOCALHOST-IP-HERE/api/generate"
+    ollama_model = "deepseek-llm:7b"
     
     try:
         response = requests.post(
